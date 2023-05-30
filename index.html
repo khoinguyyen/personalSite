@@ -1,0 +1,334 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoi Nguyen</title>
+    <script src='page.js'>
+        
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+           <a  href="index.html">Khoi Nguyen</a>
+           <div class="menu" id = "menu">
+            <ul class="list">
+                <li class="list-item">
+                    <a href="#home-sec" class="list-link current">Home</a>
+                </li>
+                <li class="list-item">
+                    <a href="#ed-sec" class="list-link">Education</a>
+                </li>
+                <li class="list-item">
+                    <a href="#proj-sec" class="list-link">Projects</a>
+                </li>
+                <li class="list-item">
+                    <a href="#bio-sec" class="list-link">AboutMe</a>
+                </li>
+            </ul> 
+           </div>
+        </nav>
+    </header>
+    <div class="content">
+        <section id="home-sec">
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="images/front.jpeg" id="profileim">
+            <br>
+            <br>
+            <div class="intro">
+                 <!-- <span class="text first-text">hi</span>
+                -->
+                 <span class="text sec-text"></span>
+
+                 <script>
+                    const text = document.querySelector(".sec-text"); 
+                    const textLoad = () => {
+                        setTimeout(() => {
+                            text.textContent = "hi there!";
+                        }, 0);
+                        setTimeout(() => {
+                            text.textContent = "my name is khoi";
+                        }, 4000);
+                        setTimeout(() => {
+                            text.textContent = "i go to UofM";
+                        }, 8000);
+                        setTimeout(() => {
+                            text.textContent = "i study computer science!";
+                        }, 12000);
+                    }
+                    textLoad();
+                    setInterval(textLoad, 16000)
+                 </script>
+                 <br>
+                 <br>
+            </div>
+            <a href="#ed-sec"> <i class="arrow"></i></a>
+        </section>
+
+        <br>
+        <br>
+
+        <section id = "ed-sec">
+            <div class="education">
+                <br> 
+                <h1 id="ed-title"> EDUCATION<h1>
+                    <div class="edu">
+                        <p style="font-size: 20px;">University of Michigan</p>
+                        <p>B.S. Computer Science</p>
+                        <p>Expected Graduation May 2024</p>
+                        <br>
+                            <div class="edu-body" >
+                                <p style="font-size: 22px;text-decoration: underline;">Relavent CourseWork</p>
+                                <ul class="edu-list">
+                                    <li>Discrete Math</li>
+                                    <li>Computer Organization</li>
+                                    <li>Data Structures and Algorithms</li>
+                                    <li>Statistics and Data Analysis</li>
+                                    <li>User Interface Development</li>
+                                    <li>Foundations of Computer Science</li>
+                                    <li>Programming and Data Structures</li>
+                                    <li>Database Management Systems</li>
+                                    <li>Mobile Development</li>
+                                </ul>
+                                <br>
+                                <br>
+                            </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="proj-sec">
+            <br>
+            <h1 style="color: grey;" id="ed-title">PROJECTS</h1>
+            <br>
+            <br>
+            <div class="projs" >
+                <img class="proj-im" src="images/euchre.png"> 
+                <div class="proj-des">
+                    <div class="proj-text">
+                        <h1>Euchre</h1>
+                        <br>
+                        <p style="font-size: 15px;"> Implemented the 4 people card game Euchre, with abstract data types, derived classes, polymorphism where players can play manually or have a computer player.
+                            Organized and communicated with a partner to create the game. 
+                        </p>
+                        <br>
+                        <p><i>C++</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="projs">
+                <img class="proj-im" src="images/sillypq.png">
+                <div class="proj-des">
+                    <div class="proj-text">
+                        <h2>SillyQL</h2>
+                        <br>
+                        <p style="font-size: 15px;"> Used appropriate data structures and abstract data types to create a basic relational database while working with the different interacting data structures. 
+                            Gained experience with creating classes, structs, and functors to handle the different situations and optimize the use of the structured query language to retrieve information 
+                            
+                        </p>
+                        <br>
+                        <p><i>C++</i></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projs">
+                <img class="proj-im" src="images/webs.png">
+                <div class="proj-des">
+                    <div class="proj-text">
+                        <h2>Personal Site</h2>
+                        <br>
+                        <p style="font-size: 15px;"> Created my own personal website that you are on right now! Drew all of the images and icons myself :)
+                        </p>
+                        
+                        <br>
+                        <p><i>HTML/CSS Javascript</i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <section id="bio-sec">
+            <br>
+            
+            <div class="bio">
+                <br>
+                <h1 id="ed-title">ABOUT ME</h1>
+                <div id="btnCon">
+                    <button class="btn active" onclick="filter('all')">All</button>
+                    <button class="btn" onclick="filter('work')">Work</button>
+                    <button class="btn" onclick="filter('leader')">Leadership</button>
+                    <button class="btn" onclick="filter('hobby')">Hobbies</button>
+                </div>
+                <br>
+                <br>
+                <div class="bioCon">
+                    <div class="filterDiv work">
+                        <img class="bio-im" src="images/bio/comp.png">
+                        <div class="bio-des">
+                            <div class="bio-text">
+                                <h2 style="font-size: 20px;">Software Engineer Intern</h2>
+                                <br>
+                                <p style="font-size: 15px;">To be continued 
+                                </p>
+                                <br>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv leader"><img class="bio-im" src="images/bio/boba.png">
+                        <div class="bio-des">
+                            <div class="bio-text">
+                                <h2 style="font-size: 22px; margin-bottom: 5px;"><b>Sharetea Shift Leader</b></h2>
+                            
+                                <p style="font-size: 15px;"> Cooperate with fellow workers in an incredibly high paced environment to consistently perform quality work and customer service. Managed inventory and restock to keep track and maintain constant availability of products for workers 
+                                    Trained new employees to work efficiently and grow their customer services skills.
+                                    
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv leader"><img class="bio-im" src="images/bio/apple.png">
+                        <div class="bio-des">
+                            <div class="bio-text">
+                                <h2>CSP Mentor+Tutor</h2>
+                                <br>
+                                <p style="font-size: 15px;">Motivated and provided a resource for incoming first generation freshmen by offering
+                                    emotional support, advice for being a college student, and help on school work. Created a comfortable environment for students to get extra support through tutoring in Math and Statistics
+                                    
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv leader"><img class="bio-im" src="images/bio/book.png">
+                        <div class="bio-des">
+                            <div class="bio-text">
+                                <h2>ETC Chair Member+Tutor</h2>
+                                <br>
+                                <p style="font-size: 15px;"> Creating projects and organizing teams to offer resources to different underpriviledged groups. Tutored K-12 students 3-5 hours weekly from schools in underdeveloped areas. 
+                                     
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv hobby"><img class="bio-im" src="images/bio/lift.png">
+                        <div class="bio-des">
+                            <div class="bio-text">
+                                <h2>Lifting</h2>
+                                <br>
+                                <p style="font-size: 15px;">I love feeling strong! My passion for lifting has only grown. After a long day, I will never be too tired to go. 
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv hobby"><img class="bio-im" src="images/bio/tennis.png">
+                        <div class="bio-des">
+                            <div class="bio-text">
+                                <h2>Tennis</h2>
+                                <br>
+                                <p style="font-size: 15px;">Playing tennis is the only sport I know how to play and I love it. 
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv hobby"><img class="bio-im" src="images/bio/tutor.png">
+                        <div class="bio-des">
+                            <div class="bio-text">
+                                <h2>Tutoring</h2>
+                                <br>
+                                <p style="font-size: 15px;">I have enjoyed tutoring students since high school. I am grateful to be able to continue this passion in college as well. 
+                                </p>
+                                <br>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv hobby"><img class="bio-im" src="images/bio/paint.png">
+                        <div class="bio-des">
+                            <div class="bio-text">
+                                <h2>Painting</h2>
+                                <br>
+                                <p style="font-size: 15px;"> Painting allows me to take my focus away from school and stress. I could paint for hours!
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                filter("all")
+                function filter(c) {
+                  var x, i;
+                  x = document.getElementsByClassName("filterDiv");
+                  if (c == "all") c = "";
+                  for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                  }
+                }
+                
+                function w3AddClass(element, name) {
+                  var i, arr1, arr2;
+                  arr1 = element.className.split(" ");
+                  arr2 = name.split(" ");
+                  for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                  }
+                }
+                
+                function w3RemoveClass(element, name) {
+                  var i, arr1, arr2;
+                  arr1 = element.className.split(" ");
+                  arr2 = name.split(" ");
+                  for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                    }
+                  }
+                  element.className = arr1.join(" ");
+                }
+                
+                var btnContainer = document.getElementById("btnCon");
+                var btns = btnContainer.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                  btns[i].addEventListener("click", function(){
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                  });
+                }
+                </script>
+                
+        </section>
+        <br>
+        <br>
+        <section id="contact">
+            <div class="contact">
+                <h1>Contact Me</h1>
+                <a href="https://www.linkedin.com/in/khoi-nguyen-353a21227" class="links">Linkedin</a>
+                <span>~</span>
+                <a href="mailto:khoin@umich.edu" class="links">Email</a>
+                <span>~</span>
+                <a href="resumeforcs.pdf" class="links">Resume</a>
+
+            </div>
+        </section>
+    </div>
+   
+
+</body>
+</html>
